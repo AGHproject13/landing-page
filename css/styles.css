@@ -9,24 +9,68 @@ body {
   font-family: Roboto, sans-serif;
 }
 
-header {
-  display: flex;
+.header,
+.hero {
   background-color: #1f2937;
-  padding: 15px 0;
-  justify-content: space-around;
+  display: flex;
   align-items: center;
 }
 
-header .header-logo {
+.header {
+  padding: 16px 200px 0;
+  justify-content: space-between;
+}
+
+.header .header-logo {
   font-size: 24px;
   font-weight: 500;
   color: #f9faf8;
 }
 
-header .header-links a {
+.header .header-links a {
   font-size: 18px;
   font-weight: 200;
   color: #e5e7eb;
   display: inline-block;
   margin: 0 7px;
+}
+
+.hero {
+  padding: 80px 200px;
+  justify-content: center;
+}
+
+.hero .hero-text {
+  flex: 1 1 50%;
+}
+
+.hero .hero-text h1 {
+  font-size: 48px;
+  font-weight: bolder;
+  color: #f9faf8;
+  margin-bottom: 10px;
+}
+
+.hero .hero-text p {
+  font-size: 18px;
+  color: #e5e7eb;
+  margin-bottom: 20px;
+}
+
+.hero .hero-text .cta {
+  background-color: #3882f6;
+  display: inline-block;
+  padding: 10px 30px;
+  color: #f9faf8;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+}
+
+.hero .hero-image {
+  flex: 1 1 50%;
+}
+
+.hero .hero-image img {
+  width: 100%;
 }
